@@ -11,16 +11,6 @@ import Saved from './screens/Saved'
 import Trips from './screens/Trips'
 import Profile from './screens/Profile'
 
-class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
-    );
-  }
-}
-
 export default createBottomTabNavigator({
   Explore: {
     screen: Explore,
