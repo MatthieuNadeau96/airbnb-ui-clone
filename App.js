@@ -9,6 +9,7 @@ import Explore from './screens/Explore'
 import Inbox from './screens/Inbox'
 import Saved from './screens/Saved'
 import Trips from './screens/Trips'
+import Profile from './screens/Profile'
 
 class App extends React.Component {
   render() {
@@ -54,6 +55,15 @@ export default createBottomTabNavigator({
       tabBarLabel: 'INBOX',
       tabBarIcon: ({tintColor})=>(
         <Icon name="md-chatboxes" color={tintColor} size={24} />
+      )
+    }
+  },
+  Profile: {
+    screen: Profile,
+    navigationOptions: {
+      tabBarLabel: 'PROFILE',
+      tabBarIcon: ({tintColor})=>(
+        <Icon name="md-person" color={tintColor} size={24} />
       )
     }
   }
