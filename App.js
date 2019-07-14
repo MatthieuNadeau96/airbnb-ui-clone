@@ -31,29 +31,29 @@ export default createBottomTabNavigator({
     }
   },
   Saved: {
-    screen: Inbox,
+    screen: Saved,
     navigationOptions: {
-      tabBarLabel: 'INBOX',
+      tabBarLabel: 'SAVED',
       tabBarIcon: ({tintColor})=>(
         <Icon name="md-heart" color={tintColor} size={24} />
       )
     }
   },
   Trips: {
-    screen: Saved,
+    screen: Trips,
     navigationOptions: {
-      tabBarLabel: 'SAVED',
+      tabBarLabel: 'TRIPS',
       tabBarIcon: ({tintColor})=>(
         <Icon name="md-airplane" color={tintColor} size={24} />
       )
     }
   },
   Inbox: {
-    screen: Trips,
+    screen: Inbox,
     navigationOptions: {
-      tabBarLabel: 'TRIPS',
+      tabBarLabel: 'INBOX',
       tabBarIcon: ({tintColor})=>(
-        <Icon name="md-mail" color={tintColor} size={24} />
+        <Icon name="md-chatboxes" color={tintColor} size={24} />
       )
     }
   }
