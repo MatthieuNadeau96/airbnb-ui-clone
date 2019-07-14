@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 import { createBottomTabNavigator } from 'react-navigation'
 
@@ -44,7 +44,7 @@ export default createBottomTabNavigator({
     navigationOptions: {
       tabBarLabel: 'TRIPS',
       tabBarIcon: ({tintColor})=>(
-        <Icon name="md-airplane" color={tintColor} size={24} />
+        <Image source={require('./assets/airbnb-icon.png')} style={{height: 24, width: 24, tintColor: tintColor }} />
       )
     }
   },
