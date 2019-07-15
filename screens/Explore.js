@@ -15,6 +15,8 @@ import {
 
 import Icon from 'react-native-vector-icons/Ionicons'
 
+import Category from './components/Explore/Category'
+
 export default class Explore extends Component {
 
   componentWillMount() {
@@ -53,21 +55,13 @@ export default class Explore extends Component {
           <View scrollEventThrottle={16}>
             <View style={{flex: 1, backgroundColor: 'white', paddingTop: 20}}>
               <Text style={{fontSize: 24, fontWeight: '700', paddingHorizontal: 20}}>
-                What can we help you find, Matt?
+                What can we help you find, Matthieu?
               </Text>
               <View style={{height: 130, marginTop: 20}}>
-                <ScrollView>
-                  <View style={{height: 130, width: 130, marginLeft: 20, borderWidth: 0.8, borderColor: '#dddddd'}}>
-                    <View style={{flex: 2}}>
-                      <Image
-                        source={require('../assets/home.jpg')}
-                        style={{flex: 1, width: null, height: null, resizeMode: 'cover'}}
-                      />
-                    </View>
-                    <View style={{flex: 1, paddingLeft: 10, paddingTop: 10}}>
-                      <Text>Home</Text>
-                    </View>
-                  </View>
+                <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+                  <Category imageUri={require('../assets/home.jpg')} name="Stays" desc="Homes & more"/>
+                  <Category imageUri={require('../assets/activites.jpg')} name="Experiences" desc="Hosted activites"/>
+                  <Category imageUri={require('../assets/trips.jpg')} name="Adventures" desc="Hosted trips"/>
                 </ScrollView>
               </View>
             </View>
