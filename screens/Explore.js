@@ -31,8 +31,8 @@ export default class Explore extends Component {
 
   render() {
     return (
-      <SafeAreaView>
-        <View>
+      <SafeAreaView style={{flex: 1}}>
+        <View style={{flex: 1}}>
           <View style={{height: this.startHeaderHeight, backgroundColor: 'white', borderBottomWidth: 1, borderBottomColor: '#dddddd'}}>
             <View
               style={{
