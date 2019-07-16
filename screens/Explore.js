@@ -88,7 +88,7 @@ export default class Explore extends Component {
               <Text style={{fontSize: 24, fontWeight: '700', paddingHorizontal: 20}}>
                 Places to stay around the world
               </Text>
-              <View style={{paddingHorizontal: 20, marginTop: 20}}>
+              <View style={{paddingHorizontal: 20, marginTop: 20, flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between'}}>
                 <Home width={width}/>
                 <Home width={width}/>
                 <Home width={width}/>
