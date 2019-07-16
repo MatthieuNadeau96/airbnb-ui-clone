@@ -84,7 +84,17 @@ export default class Explore extends Component {
                 </View>
               </View>
             </View>
-            <Home width={width} height={height}/>
+            <View style={{marginTop: 40}}>
+              <Text style={{fontSize: 24, fontWeight: '700', paddingHorizontal: 20}}>
+                Places to stay around the world
+              </Text>
+              <View style={{paddingHorizontal: 20, marginTop: 20}}>
+                <Home width={width}/>
+                <Home width={width}/>
+                <Home width={width}/>
+                <Home width={width}/>
+              </View>
+            </View>
           </ScrollView>
         </View>
       </SafeAreaView>
