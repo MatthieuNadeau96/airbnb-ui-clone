@@ -17,6 +17,7 @@ import {
 import Icon from 'react-native-vector-icons/Ionicons'
 
 import Category from './components/Explore/Category'
+import Home from './components/Explore/Home'
 
 const { height, width } = Dimensions.get('window')
 
@@ -83,6 +84,7 @@ export default class Explore extends Component {
                 </View>
               </View>
             </View>
+            <Home width={width} height={height}/>
           </ScrollView>
         </View>
       </SafeAreaView>
