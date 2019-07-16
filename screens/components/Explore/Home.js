@@ -6,6 +6,8 @@ import {
   Image,
 } from 'react-native';
 
+import StarRating from 'react-native-star-rating'
+
 export default class Home extends Component {
   render() {
     return (
@@ -17,9 +19,15 @@ export default class Home extends Component {
           />
         </View>
         <View style={{flex: 1, alignItems: 'flex-start', justifyContent: 'space-evenly', paddingLeft: 10}}>
-          <Text style={{fontSize: 10, color: '#b63838', fontWeight: 'bold'}}>ENTIRE HOUSE ⋅ KOTO-KU</Text>
-          <Text style={{fontSize: 14, fontWeight: 'bold'}}>Decoboco hanare</Text>
-          <Text style={{fontSize: 10}}>$74/night</Text>
+          <Text style={{fontSize: 9, color: '#b63838', fontWeight: 'bold'}}>{this.props.type}</Text>
+          <Text style={{fontSize: 12, fontWeight: 'bold'}}>{this.props.name}</Text>
+          <Text style={{fontSize: 10}}>${this.props.price}/night</Text>
+          <StarRating
+            disable={true}
+            maxStars={5}
+            rating={this.props.rating}
+            starSize={10}
+          />
         </View>
       </View>
     );

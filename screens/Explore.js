@@ -89,10 +89,10 @@ export default class Explore extends Component {
                 Places to stay around the world
               </Text>
               <View style={{paddingHorizontal: 20, marginTop: 20, flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between'}}>
-                <Home width={width}/>
-                <Home width={width}/>
-                <Home width={width}/>
-                <Home width={width}/>
+                <Home width={width} type={'VERIFIED ⋅ MENAGGIO'} name={'Lakeside Home with Views of Lake Como'} price={135} rating={5}/>
+                <Home width={width} type={'ENTIRE HOUSE ⋅ KOTO-KU'} name={'Decoboco hanare'} price={74} rating={5}/>
+                <Home width={width} type={'ENTIRE APARTMENT ⋅ RIVA'} name={'Lussuoso. Vista incantevole.'} price={101} rating={5}/>
+                <Home width={width} type={'ENTIRE APARTMENT ⋅ ROME'} name={'Pettinarihome Campo de FIORI'} price={124} rating={5}/>
               </View>
             </View>
           </ScrollView>
