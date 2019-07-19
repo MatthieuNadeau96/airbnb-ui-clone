@@ -15,7 +15,7 @@ export default class Home extends Component {
         <View style={{flex: 1}}>
           <Image
             style={{flex: 1, width: null, height: null, resizeMode: 'cover'}}
-            source={require('../../../assets/home.jpg')}
+            source={this.props.imageUri}
           />
         </View>
         <View style={{flex: 1, alignItems: 'flex-start', justifyContent: 'space-evenly', paddingLeft: 10}}>
