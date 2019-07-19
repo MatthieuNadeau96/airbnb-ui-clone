@@ -14,7 +14,7 @@ export default class Home extends Component {
       <View style={{width: this.props.width / 2 - 30, height: this.props.width / 2 - 30, marginVertical: 20}}>
         <View style={{flex: 1}}>
           <Image
-            style={{flex: 1, width: null, height: null, resizeMode: 'cover'}}
+            style={{flex: 1, width: null, height: null, resizeMode: 'cover', borderRadius: 3}}
             source={this.props.imageUri}
           />
         </View>
