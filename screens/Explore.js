@@ -12,12 +12,14 @@ import {
   ScrollView,
   Image,
   Dimensions,
+  Animated,
 } from 'react-native';
 
 import Icon from 'react-native-vector-icons/Ionicons'
 
 import Category from './components/Explore/Category'
 import Home from './components/Explore/Home'
+import Tag from './components/Explore/Tag'
 
 const { height, width } = Dimensions.get('window')
 
@@ -41,6 +43,7 @@ export default class Explore extends Component {
                 padding: 10,
                 backgroundColor: 'white',
                 marginHorizontal: 20,
+                borderRadius: 3,
                 shadowOffset: {width: 0, height: 0},
                 shadowColor: 'black',
                 shadowOpacity: 0.2,
@@ -55,6 +58,10 @@ export default class Explore extends Component {
                 style={{flex: 1, fontWeight: '700', backgroundColor: 'white'}}
               />
             </View>
+            <Animated.View style={{flexDirection: 'row', marginHorizontal: 20, position: 'relative', top: 10}}>
+              <Tag name="Dates"/>
+              <Tag name="Guests"/>
+            </Animated.View>
           </View>
           <ScrollView scrollEventThrottle={16}>
             <View style={{flex: 1, backgroundColor: 'white', paddingTop: 20}}>
